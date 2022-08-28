@@ -57,3 +57,6 @@ fig.add_trace(go.Scatter(x=[secondStdDevEnd,secondStdDevEnd],y=[0,0.17],mode="li
 fig.add_trace(go.Scatter(x=[thirdStdDevStart,thirdStdDevStart],y=[0,0.17],mode="lines",name="std3 Start"))
 fig.add_trace(go.Scatter(x=[thirdStdDevEnd,thirdStdDevEnd],y=[0,0.17],mode="lines",name="std3 End"))
 fig.show()
+
+z_score=(stddev-mean)/std_dev
+print(z_score)
